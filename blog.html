@@ -99,7 +99,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 text-center">
-							<h2>GJ School YouTube Channel</h2>
+							<h2>GJ School Video Gallery</h2>
 							<p>Explore the latest events, workshops, and student achievements through our official video gallery.</p>
 							<p style="margin-top: 12px;"><a id="channelLink" href="https://www.youtube.com/channel/UCbYn7T5UA4QDUIoJ-xp2yDA" target="_blank" rel="noopener noreferrer" style="color: #e62117; font-weight: bold; text-decoration: none;">GJSSS_KALWAS_EDU</a></p>
 						</div>
@@ -116,9 +116,14 @@
 		</div><!-- /.du-event -->
 
 		<div id="videoPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.88); z-index:10000; align-items:center; justify-content:center; padding:20px;">
-			<div style="position:relative; width:100%; max-width:1200px; background:#000; border-radius:18px; overflow:hidden; box-shadow:0 25px 80px rgba(0,0,0,0.5);">
-				<div style="position:absolute; top:20px; right:20px; z-index:10; cursor:pointer; color:#fff; font-size:32px; font-weight:700;" id="popupClose">&times;</div>
-				<iframe id="popupPlayer" width="100%" height="680" src="about:blank" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="display:block;"></iframe>
+			<div style="position:relative; width:100%; max-width:960px; border-radius:16px; overflow:hidden; box-shadow:0 25px 70px rgba(0,0,0,0.55);">
+				<div style="background:#111; padding:14px 18px; display:flex; justify-content:space-between; align-items:center;">
+					<div style="color:#fff; font-size:1rem; font-weight:700;">Now Playing</div>
+					<div id="popupClose" style="cursor:pointer; color:#fff; font-size:28px; font-weight:700; line-height:1;">&times;</div>
+				</div>
+				<div style="position:relative; width:100%; padding-top:56.25%; background:#000;">
+					<iframe id="popupPlayer" src="about:blank" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="position:absolute; top:0; left:0; width:100%; height:100%;"></iframe>
+				</div>
 			</div>
 		</div>
 	</div><!-- /.du-subpage content -->
